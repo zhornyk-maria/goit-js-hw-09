@@ -6,5 +6,5 @@ import"./assets/styles-d042dcdd.js";import{S as i}from"./assets/vendor-c9def49e.
                     alt="${o.description}"
                     />
                 </a>
-            </li>`}function e(o){return o.map(n).join("")}function c(){const o=e(t);a.innerHTML=o}c();let p=new i(".gallery a",{captionsData:"alt",captionDelay:"250"});p.on("show.simplelightbox",function(){});p.on("error.simplelightbox",function(o){console.log(o)});
+            </li>`}function e(o){return o.map(n).join("")}function c(){const o=e(t);a.innerHTML=o}c();const p=new i(".gallery a",{captionsData:"alt",captionDelay:250});p.on("show.simplelightbox",function(){});p.on("error.simplelightbox",function(o){console.log(o)});
 //# sourceMappingURL=commonHelpers.js.map
