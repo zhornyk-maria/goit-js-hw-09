@@ -36,6 +36,26 @@ body {
   width: 100%;
 }
 
-/* .basicLightbox {
-  background: rgba(46, 47, 66, 0.8);
-} */
+div.sl-overlay {
+  opacity: 1 !important;
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper div.sl-counter {
+  color: #fff;
+}
+
+.sl-wrapper div.sl-navigation button {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.sl-wrapper button.sl-close {
+  color: #fff;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  font-size: 32px;
+}

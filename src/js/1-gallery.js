@@ -97,12 +97,12 @@ function render() {
 render();
 
 
-let gallery = new SimpleLightbox('.gallery a');
+let gallery = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: '250' });
 gallery.on('show.simplelightbox', function () {
-	// do something…
+
 });
 
 gallery.on('error.simplelightbox', function (e) {
-	console.log(e); // some usefull information
+	console.log(e);
 });
 
