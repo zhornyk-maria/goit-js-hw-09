@@ -19,3 +19,15 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+.nav-page {
+  font-size: 40px;
+}
+
+.nav-page:hover {
+  text-decoration: underline;
+}
+
+.nav-page + .nav-page {
+  margin-left: 40px;
+}
