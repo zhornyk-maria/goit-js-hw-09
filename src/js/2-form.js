@@ -18,11 +18,10 @@ function saveToLS(key, value) {
 
 
 const form = document.querySelector('.feedback-form');
-const textarea = form.querySelector('textarea');
 
 form.addEventListener('input', (e) => {
-    const userEmail = form.elements.email.value;
-    const userMessage = form.elements.message.value;
+    const userEmail = form.elements.email.value.trim();
+    const userMessage = form.elements.message.value.trim();
 
     const data = {
         email: userEmail,
@@ -53,7 +52,6 @@ form.addEventListener('submit', (e) => {
     const userMessage = form.elements.message.value.trim();;
     if (userEmail === '' || userMessage === '') {
         alert('Please fill in both form elements.');
-        e.preventDefault();
     }
 
     localStorage.removeItem(STORAGE_KEY);
