@@ -1,6 +1,6 @@
 const STORAGE_KEY = 'feedback-form-state';
 
-function loadFromLS(key = 'empty') {
+function loadFromLS(key = 'null') {
     const data = localStorage.getItem(key); 
 
     try {
@@ -27,8 +27,7 @@ form.addEventListener('input', (e) => {
         email: userEmail,
         message: userMessage,
     }
-
-    saveToLS(STORAGE_KEY, data);
+    
 });
 
 
